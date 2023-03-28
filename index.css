@@ -789,12 +789,12 @@ footer{
 
     .navbar .open{
         display:none;
-        align-self:center ;
+        align-self:center;
         animation: transition1 400ms ease forwards;
     }
     @keyframes transiton1 {
         to{
-            display:block;
+            display:inline-block;
         }
     }
 
@@ -808,10 +808,10 @@ footer{
     .navbar .effect .close {
         margin-top: 20px;
         display: block;
-        animation: transition 400ms ease forwards;
+        animation: transition2 400ms ease forwards;
     }
 
-    @keyframes transiton {
+    @keyframes transiton2 {
         to{
             display:none
         }
