@@ -794,7 +794,7 @@ footer{
     }
     @keyframes transiton1 {
         to{
-            display:inline-block;
+            display:block;
         }
     }
 
