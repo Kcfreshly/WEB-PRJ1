@@ -33,9 +33,17 @@ body{
     background-color:#FFFFFF ;
     position: sticky;
     box-shadow: 2px 4px 0px 5px #FFFFFF  ;
-    top: 0;
+    top: -1000px;
     z-index: 1;
+    animation: increaseNav 800ms ease-in forwards;
 }
+
+@keyframes increaseNav {
+    to{
+        top: 0;
+    }
+}
+
 
 .navbar .open{
   display:none;
@@ -758,16 +766,7 @@ footer{
         display: block; 
         background-color:#f6f6f9;
         position: fixed;
-        left: -1000px;
-        animation: increaseNav 400ms ease-in forwards;
     }
-
-    @keyframes increaseNav {
-        to{
-            left: 0;
-        }
-    }
-
     .navbar .menu{
         display: none;
         position: absolute;
