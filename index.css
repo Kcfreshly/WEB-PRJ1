@@ -164,13 +164,19 @@ body{
     height: 600px;
     margin-top: 150px;
     display: grid;
-    grid-gap: 80px;
+    grid-gap: 800px;
     justify-content:center;
     grid-template-columns: 200px 200px 200px 200px ;
     grid-template-rows: 100px 100px 100px;
     color: black;
+    animation: slider1 800ms ease forwards ;
 }
 
+@keyframes slider1 {
+    to{
+        grid-gap:80px;
+    }
+}
 
 .main-body .side0{
     grid-column: 1/5; 
@@ -752,13 +758,13 @@ footer{
         display: block; 
         background-color:#f6f6f9;
         position: fixed;
-        width: fit-content;
-        animation: increaseNav 400ms ease forwards;
+        left: -1000px;
+        animation: increaseNav 400ms ease-in forwards;
     }
 
     @keyframes increaseNav {
         to{
-            width: 100vw;
+            left: 0;
         }
     }
 
@@ -788,15 +794,10 @@ footer{
     }
 
     .navbar .open{
-        display:none;
+        display:block;
         align-self:center;
-        animation: transition1 400ms ease forwards;
     }
-    @keyframes transiton1 {
-        to{
-            display:block;
-        }
-    }
+   
 
     .navbar .effect .open button{
         cursor: pointer;
@@ -806,16 +807,11 @@ footer{
       } 
 
     .navbar .effect .close {
-        margin-top: 20px;
-        display: block;
+        align-self: center;
+        display: none;
         animation: transition2 400ms ease forwards;
     }
 
-    @keyframes transiton2 {
-        to{
-            display:none
-        }
-    }
 
      .navbar .effect .close span{
         font-size: 30px;
