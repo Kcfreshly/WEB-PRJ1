@@ -788,9 +788,14 @@ footer{
     }
 
     .navbar .open{
-        display:block;
+        display:none;
         align-self:center ;
-         
+        animation: transition1 400ms ease forwards;
+    }
+    @keyframes transiton1 {
+        to{
+            display:block;
+        }
     }
 
     .navbar .effect .open button{
@@ -802,7 +807,14 @@ footer{
 
     .navbar .effect .close {
         margin-top: 20px;
-        display: none;
+        display: block;
+        animation: transition 400ms ease forwards;
+    }
+
+    @keyframes transiton {
+        to{
+            display:none
+        }
     }
 
      .navbar .effect .close span{
